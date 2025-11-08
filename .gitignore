@@ -9,4 +9,7 @@
 *.tfstate.backup
 
 # Optional: ignore crash logs
-crash.log
+crash.log/env/dev/.terraform/
+#Hide this
+/env/dev/.terraform/
+/envs/dev/.terraform/
