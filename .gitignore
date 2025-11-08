@@ -12,4 +12,5 @@
 crash.log/env/dev/.terraform/
 #Hide this
 /env/dev/.terraform/
-/envs/dev/.terraform/
+**/.terraform/
+/env/dev/.terraform/
