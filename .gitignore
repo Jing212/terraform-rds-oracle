@@ -1,24 +1,12 @@
-# Local .terraform directories
+# Ignore all Terraform local state and providers
+**/.terraform/
 **/.terraform/*
+**/.terraform/providers/
+**/.terraform/providers/**
 
-# Terraform state files
+# Optional: ignore Terraform state files too
 *.tfstate
-*.tfstate.*
+*.tfstate.backup
 
-# Crash logs
+# Optional: ignore crash logs
 crash.log
-crash.*.log
-
-# Ignore override files
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-
-# Terraform variable files (optional, if they contain secrets)
-*.tfvars
-*.tfvars.json
-
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
