@@ -7,18 +7,24 @@ Layer A — AWS Management: Infrastructure, monitoring, scaling, and recovery.
 
 Layer B — Database Optimization: SQL Developer, AWR, and benchmark analysis.
 
-## Architecture overview
+## 🧭 Architecture Diagram
 
-```mermaid
-flowchart TD
-    A[Internet] --> B[Internet Gateway]
-    B --> C[VPC (10.0.0.0/16)]
-    C --> D[Public Subnets]
-    C --> E[Security Group<br/>allow TCP 1521 from my_ip_cidr]
-    C --> F[RDS Oracle SE2 (19c)]
-    F --> F1[Terraform Provisioned]
-    F --> F2[Monitored via CloudWatch / Performance Insights]
-    F --> F3[Connected via SQL Developer]
+[Internet]
+│
+▼
+┌──────────────┐
+│ Internet GW │
+└──────┬───────┘
+│
+┌──────▼──────────────┐
+│ VPC (10.0.0.0/16) │
+│ ├─ Public Subnets │
+│ ├─ Security Group → allow TCP 1521 from my_ip_cidr │
+│ └─ RDS Oracle SE2 (19c) │
+│ ├─ Terraform provisioned │
+│ ├─ CloudWatch / PI monitored │
+│ └─ SQL Developer connected │
+└────────────────────────────────────┘
 
 ## Layer A
 
