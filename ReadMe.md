@@ -10,20 +10,20 @@ Layer B — Database Optimization: SQL Developer, AWR, and benchmark analysis.
 ## Architecture overview
 
 [Internet]
-   │
-   ▼
+│
+▼
 ┌──────────────┐
-│  Internet GW │
+│ Internet GW │
 └──────┬───────┘
-       │
+│
 ┌──────▼──────────────┐
-│ VPC (10.0.0.0/16)   │
-│  ├─ Public Subnets  │
-│  ├─ Security Group → allow TCP 1521 from my_ip_cidr │
-│  └─ RDS Oracle SE2 (19c)  │
-│        ├─ Terraform provisioned │
-│        ├─ CloudWatch / PI monitored │
-│        └─ SQL Developer connected │
+│ VPC (10.0.0.0/16) │
+│ ├─ Public Subnets │
+│ ├─ Security Group → allow TCP 1521 from my_ip_cidr │
+│ └─ RDS Oracle SE2 (19c) │
+│ ├─ Terraform provisioned │
+│ ├─ CloudWatch / PI monitored │
+│ └─ SQL Developer connected │
 └────────────────────────────────────┘
 
 ## Layer A
