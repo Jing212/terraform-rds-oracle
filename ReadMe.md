@@ -9,7 +9,7 @@ Layer B — Database Optimization: SQL Developer, AWR, and benchmark analysis.
 
 ## 🧭 Architecture Diagram
 
-[Internet]
+```[Internet]
 │
 ▼
 ┌──────────────┐
@@ -24,7 +24,7 @@ Layer B — Database Optimization: SQL Developer, AWR, and benchmark analysis.
 │ ├─ Terraform provisioned │
 │ ├─ CloudWatch / PI monitored │
 │ └─ SQL Developer connected │
-└────────────────────────────────────┘
+└────────────────────────────────────┘```
 
 ## Layer A
 
